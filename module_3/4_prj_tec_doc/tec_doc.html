@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>JLab Documentation</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <header>
+          <h1>JLab Documentation</h1>
+        </header> 
+        <ul>
+          <li><a href="#overview" class="nav-link">Overview</a></li>
+          <li><a href="#two_mode" class="nav-link">Two Mode</a></li>
+          <li><a href="#working_with_cells" class="nav-link">Working with Cells</a></li>
+          <li><a href="#markdown_language" class="nav-link">Markdown Language</a></li>
+          <li><a href="#magic_command" class="nav-link">Magic Command</a></li>
+          <li><a href="#bang_operator" class="nav-link">Bang Operator</a></li>
+        </ul> 
+      </nav>        
+      <main id="main-doc">
+        <section id="overview" class="main-section">
+          <header>
+            <h2>Overview</h2>
+          </header>
+
+          <p>
+            JupyterLab is a powerful web-based interactive development environment designed for working with Jupyter notebooks, code, and data. It provides a flexible interface, allowing users to run and edit Python, R, and other languages seamlessly within a single workspace. Its modular structure enables users to open multiple files side by side, customize layouts, and integrate extensions to enhance functionality.
+          </p>
+          <p>
+            Widely used in data science, machine learning, and research, JupyterLab simplifies handling notebooks, terminals, and text editors in one place. Its efficient design makes it a preferred tool for researchers and developers looking to streamline their workflows, visualize data, and collaborate on projects effectively.
+          </p>
+
+          <code></code>
+          <code></code>
+          <code></code>
+
+          <ul>
+            <li>
+              Interactive development environment
+            </li>
+            <li>
+              Offers both syntax highlighting and code autocompletion
+            </li>
+            <li>
+              Write and execute code interactively (ideal for Python, R, Julia, and more).
+            </li>
+            <li>
+              Document your work with markdown text alongside your code.
+            </li>
+            <li>
+              Visualize data through graphs, charts, or tables.
+            </li>
+            <li>
+              A hybrid tool that merges coding with research, making it perfect for exploring data and sharing insights.
+            </li>
+            <li>
+                The result of the last line of code within the cell is displayed as the output.
+            </li>
+          </ul>
+          
+        </section>
+        <section id="two_mode" class="main-section">
+          <header>
+            <h2>Two Mode</h2>
+          </header>
+          <p>
+            JupyterLab operates using two modes: Command Mode and Edit Mode, which are designed to optimize notebook workflows. Command Mode is focused on managing the structure of a notebook, allowing users to add, delete, move, or copy cells. This mode provides a bird's-eye view of the notebook layout and is activated by pressing Esc. A blue border around the active cell serves as a visual cue for this mode.
+          </p>
+          <p>
+            Edit Mode, on the other hand, is dedicated to working within individual cells. Users can write code, add markdown text, or edit content directly in this mode. It is activated by pressing Enter, and a green border around the cell signals that it's ready for editing. Together, these two modes ensure smooth transitions between organizing notebooks and creating or modifying content, enhancing productivity for all users.
+          </p>
+          <ul>
+            <li>
+              Command Mode - Esc
+            </li>
+            <li>
+              Edit Mode - Enter
+            </li>
+          </ul>
+          <p></p>
+          <p></p>
+
+        </section>
+        <section id="working_with_cells" class="main-section">
+          <header>
+            <h2>Working with Cells</h2>
+          </header>
+          <p>
+            Working with cells in JupyterLab is intuitive and efficient. Cells are the building blocks of a notebook, and users can manage them easily by adding, deleting, rearranging, or copying them. This helps in organizing the notebook's structure to suit specific workflows. In Command Mode, accessed by pressing Esc, users can perform these actions at the cell level without editing the content inside them.
+          </p>
+          <p>
+            When it comes to editing or creating content within a cell, Edit Mode is used. This mode allows users to write code, add markdown text, or update existing content directly within a specific cell. Pressing Enter switches to Edit Mode, and users can focus on their detailed work. These two functionalities make working with cells seamless, enabling a smooth flow between organizing and content creation.
+          </p>
+          <ul>
+            <li>
+              Command Mode:
+              <ul>
+                <li>run - Shift + Enter</li>
+                <li>Markdown - m</li>
+                <li>Code - y</li>
+                <li>Raw - r</li>
+                <li>cell above - a</li>
+                <li>cell below - b</li>
+                <li>delete cell - dd</li>
+                <li>undo cell - z</li>
+              </ul>
+            </li>
+            <li>
+              Edit Mode:
+              <ul>
+                <li>run - Shift + Enter</li>
+                </ul>
+              </li>
+          </ul>
+        </section>
+        <section id="markdown_language" class="main-section">
+          <header>
+            <h2>Markdown Language</h2>
+          </header>
+
+          <p>
+            Markdown is a lightweight and easy-to-use markup language for formatting text. It uses plain text syntax, making it simple to create well-structured documents without complex tools. Common features include headers, lists, bold and italic text, and links, all created with straightforward characters like hashtags, asterisks, and brackets. It's especially popular for creating README files, writing documentation, and formatting text for websites.
+          </p>
+          <p>
+            One of Markdown's key benefits is its versatility. It can be converted into HTML and integrated into various platforms, including GitHub and Jupyter notebooks. This adaptability allows users to focus on content creation without worrying about design complexities. With its simplicity and functionality, Markdown is a valuable tool for developers, writers, and anyone looking to format text efficiently.
+          </p>
+
+          <pre>
+            <code>
+              # Header 1
+              ## Header 2
+              ### Header 3
+
+              **Bold Text**  
+              *Italic Text*  
+              ~~Strikethrough~~  
+
+              - Bullet List Item 1
+              - Bullet List Item 2
+                - Nested Item
+
+              1. Numbered List Item 1
+              2. Numbered List Item 2
+
+              [This is a link](https://example.com)  
+              ![This is an image](https://via.placeholder.com/150)
+
+              `Inline code example`
+            </code>
+          </pre>
+        </section>
+        <section id="magic_command" class="main-section">
+          <header>
+            <h2>Magic Command</h2>
+          </header>
+
+          <p>
+            In Python, magic commands are specific to Jupyter notebooks and IPython environments. They're prefixed with % or %%, allowing you to perform various tasks such as setting configurations, running scripts, and more.
+          </p>
+          <p>
+            Types of Magic Commands:
+            <ul>
+              <li>
+                Line Magics (%): Operate on a single line.
+              </li>
+              <li>
+Cell Magics (%%): Apply to an entire cell in Jupyter.
+              </li>
+            </ul>
+          </p>
+          <pre>
+            <code>
+              %%time
+              total = 0
+              for i in range(1000000):
+                  total += i**2
+            </code>
+          </pre>
+          <pre>
+            <code>
+              %time sum([i**2 for i in range(1000000)])
+            </code>
+          </pre>
+        </section>
+        <section id="bang_operator" class="main-section">
+          <header>
+            <h2>Bang Operator</h2>
+          </header>
+          <p>
+            In a Jupyter Notebook, you can execute command-line (shell) commands directly from a code cell using magic commands or the ! (bang) operator.
+          </p>
+          <pre>
+            <code>
+              !python --version
+            </code>
+          </pre>
+          <pre>
+            <code>
+              !jlab --version              
+            </code>
+          </pre>
+        </section>
+      </main>
+    </container>
+  </body>
+</html>

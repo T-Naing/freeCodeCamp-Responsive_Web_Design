@@ -1,0 +1,28 @@
+*{
+	box-sizing: border-box;
+}
+div{
+	border: 1px solid green;
+	padding: 5px;
+}
+div div{
+	border: 1px solid red;
+}
+div div div{
+	border: 1px solid blue;
+	width: 100%;
+	max-width: 350px;
+	border-radius: 10px;
+	box-shadow: 5px 0px 3px 15px orchid;
+
+}
+
+.nav{
+	display: flex;
+	flex-direction: row;
+/*	flex-wrap: wrap;*/
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 15px;
+	overflow: hidden;
+}
