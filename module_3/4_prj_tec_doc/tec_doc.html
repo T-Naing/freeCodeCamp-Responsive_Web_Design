@@ -12,12 +12,23 @@
           <h1>JLab Documentation</h1>
         </header> 
         <ul>
-          <li><a href="#overview" class="nav-link">Overview</a></li>
-          <li><a href="#two_mode" class="nav-link">Two Mode</a></li>
-          <li><a href="#working_with_cells" class="nav-link">Working with Cells</a></li>
-          <li><a href="#markdown_language" class="nav-link">Markdown Language</a></li>
-          <li><a href="#magic_command" class="nav-link">Magic Command</a></li>
-          <li><a href="#bang_operator" class="nav-link">Bang Operator</a></li>
+          <a href="#overview" class="nav-link">
+          <li>Overview</li>
+          </a>
+          <a href="#two_mode" class="nav-link">
+          <li>Two Mode</li>
+          </a>
+          <a href="#working_with_cells" class="nav-link">
+            <li>Working with Cells</li>
+            </a>
+            <a href="#markdown_language" class="nav-link">
+          <li>Markdown Language</li>
+          </a>
+          <a href="#magic_command" class="nav-link"><li>Magic Command</li>
+          </a>
+          <a href="#bang_operator" class="nav-link">
+          <li>Bang Operator</li>
+          </a>
         </ul> 
       </nav>        
       <main id="main-doc">
@@ -32,11 +43,6 @@
           <p>
             Widely used in data science, machine learning, and research, JupyterLab simplifies handling notebooks, terminals, and text editors in one place. Its efficient design makes it a preferred tool for researchers and developers looking to streamline their workflows, visualize data, and collaborate on projects effectively.
           </p>
-
-          <code></code>
-          <code></code>
-          <code></code>
-
           <ul>
             <li>
               Interactive development environment
@@ -127,7 +133,6 @@
           <p>
             One of Markdown's key benefits is its versatility. It can be converted into HTML and integrated into various platforms, including GitHub and Jupyter notebooks. This adaptability allows users to focus on content creation without worrying about design complexities. With its simplicity and functionality, Markdown is a valuable tool for developers, writers, and anyone looking to format text efficiently.
           </p>
-
           <pre>
             <code>
               # Header 1
@@ -156,7 +161,6 @@
           <header>
             <h2>Magic Command</h2>
           </header>
-
           <p>
             In Python, magic commands are specific to Jupyter notebooks and IPython environments. They're prefixed with % or %%, allowing you to perform various tasks such as setting configurations, running scripts, and more.
           </p>
@@ -171,6 +175,7 @@ Cell Magics (%%): Apply to an entire cell in Jupyter.
               </li>
             </ul>
           </p>
+          <h3>Single Line</h3>
           <pre>
             <code>
               %%time
@@ -178,7 +183,8 @@ Cell Magics (%%): Apply to an entire cell in Jupyter.
               for i in range(1000000):
                   total += i**2
             </code>
-          </pre>
+            </pre>
+          <h3>Entire Cell</h3>
           <pre>
             <code>
               %time sum([i**2 for i in range(1000000)])
