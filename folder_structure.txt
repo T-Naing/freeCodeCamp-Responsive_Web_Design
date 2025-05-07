@@ -10,7 +10,3 @@
   ├── module-3
   ├── module-4
   ├── module-5
-
-https://t-naing.github.io/freeCodeCamp-Responsive_Web_Design/module_5/2_css_transforms_penguin/penguin.html
-
-module_5/3_prj_portfolio/portfolio.html
