@@ -114,7 +114,7 @@ header, footer, nav, section{
 }
 hr{
 	width: 80%;
-	margin:0 auto ;
+	margin: 20px auto;
 }
 .project-tile{
   display: grid;

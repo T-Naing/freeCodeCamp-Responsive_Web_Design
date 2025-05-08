@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head></head>
-  <title></title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css">
-  <body>
-    <div class="overlay"></div>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">
-      Responsive Web Design Learning Survey
-    </p>  
-    <form id="survey-form">
-      <fieldset>
+<head></head>
+<title></title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<body>
+  <div class="overlay"></div>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">
+    Responsive Web Design Learning Survey
+  </p>  
+  <form id="survey-form">
+    <fieldset>
       <label for="name" id="name-label" >
         Name:
         <input id="name" name="" type="text" placeholder="Enter your name" required/>
@@ -25,56 +25,56 @@
       <label for="number" id="number-label" >Age:
         <input id="number" name="number" type="number" min="6" max="130" placeholder="Enter your age" />
       </label>
-      </fieldset>
+    </fieldset>
 
-      <fieldset>
-        <label for="reason">What is your reason for learning responsive web design?  
-  <select id="dropdown" name="reason">  
-    <option value="">(Choose an option)</option>  
-    <option value="career-change">To switch careers</option>  
-    <option value="portfolio">To build a portfolio</option>  
-    <option value="coursework">For academic purposes</option>  
-    <option value="other">Other</option>  
-  </select>  
-</label>
-      </fieldset>
+    <fieldset>
+      <label for="reason">What is your reason for learning responsive web design?  
+        <select id="dropdown" name="reason">  
+          <option value="">(Choose an option)</option>  
+          <option value="career-change">To switch careers</option>  
+          <option value="portfolio">To build a portfolio</option>  
+          <option value="coursework">For academic purposes</option>  
+          <option value="other">Other</option>  
+        </select>  
+      </label>
+    </fieldset>
 
-<fieldset>
-  <legend>Programming Knowledge</legend>
-  <label>
-    <label>
-    <input type="radio" class="inline" id="no-experience" name="xp-type" value="no-xp" checked />
-    This is my first time learning programming.
-  </label>
-    <input type="radio" class="inline" id="experience" name="xp-type"  value="have-xp"/>
-     I have programming experience and have learned to code before.
-  </label>
-  
-</fieldset>
-
-<fieldset>
-  <legend>Select the languages you want to learn next:</legend>
-  <label for="python">
-    <input id="python" class="inline" type="checkbox" name="language" value="python" /> Python
-  </label>
-  
-  <label for="javascript">
-    <input id="javascript" class="inline" type="checkbox" name="language" value="javascript" /> JavaScript
-  </label>
-  
-  <label for="node">
-    <input id="node" class="inline" type="checkbox" name="language" value="nodejs" /> Node.js
-  </label>
-</fieldset>
-
-<label for="comment">Comment:
-          <textarea id="comment" name="comment" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+    <fieldset>
+      <legend>Programming Knowledge</legend>
+      <label>
+        <label>
+          <input type="radio" class="inline" id="no-experience" name="xp-type" value="no-xp" checked />
+          This is my first time learning programming.
         </label>
-        <input id="submit" type="submit" value="Submit" />
+        <input type="radio" class="inline" id="experience" name="xp-type"  value="have-xp"/>
+        I have programming experience and have learned to code before.
+      </label>
+      
+    </fieldset>
+
+    <fieldset>
+      <legend>Select the languages you want to learn next:</legend>
+      <label for="python">
+        <input id="python" class="inline" type="checkbox" name="language" value="python" /> Python
+      </label>
+      
+      <label for="javascript">
+        <input id="javascript" class="inline" type="checkbox" name="language" value="javascript" /> JavaScript
+      </label>
+      
+      <label for="node">
+        <input id="node" class="inline" type="checkbox" name="language" value="nodejs" /> Node.js
+      </label>
+    </fieldset>
+
+    <label for="comment">Comment:
+      <textarea id="comment" name="comment" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+    </label>
+    <input id="submit" type="submit" value="Submit" />
 
 
 
-      </form>
-  </body>
+  </form>
+</body>
 
-  </html>
+</html>
